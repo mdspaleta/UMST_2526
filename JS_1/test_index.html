@@ -6,6 +6,29 @@
 </head>
 <body>
 <script>
+    let N = 10;
+    for (let k=0;k<N; k++){
+        document.writeln("This is message - number of occurencess: " + k +"</br>");
+        k+=1;
+    }
+    let cnt = 0;
+    while(N-cnt>0){
+        document.writeln("This is message - number of occurencess: " + cnt +"</br>");
+        cnt+=1;
+    }
+</script>
+<script>
+    var some_var = "Neka poruka!";
+    let another = 3000;
+    {
+        document.writeln(some_var);
+        document.writeln("</br>")
+        document.writeln(another);
+    }
+    document.write("Izvan bloka: " + some_var + "</br>");
+    document.write("Isto izvan bloka: " + another);
+</script>
+<script>
   var msg = "Some message in Java Script!!!\n";
   document.writeln(msg);
   document.write("<br /> Type of: " + typeof (msg));
