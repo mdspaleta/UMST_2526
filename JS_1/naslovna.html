@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backtick strings - embeddings</title>
+</head>
+<body>
+<script>
+    var simple_msg = "some simple msg!!!";
+    let number = 25.678;
+    let msg = `This is a backtick msg <b>${number}</b> finally! </br>`
+        document.writeln("Simple - " + simple_msg + "</br>");
+    document.write("</br>");
+    document.write(number);
+    document.write("</br>");
+    document.write(msg);
+    document.write("</br>");
+    let name = "Marko";
+    let greetings = `Hello: ˘${name}</br>`;
+    document.writeln(greetings);
+</script>
+</body>
+</html>
