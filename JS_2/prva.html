@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IF-ELSE IF-ELSE</title>
+</head>
+<body>
+<script>
+  let bodovi = Math.floor(Math.random()*101);
+  if(bodovi > 90){
+    document.write ("Ocjena je: izvrstan (5) - bodova: " + bodovi);
+    document.write ("<br />");
+  } else if (bodovi > 78){
+    document.write ("Ocjena je: vrlo dobar (4) - bodova: " + bodovi);
+    document.write ("<br />");
+  } else if (bodovi > 63){
+    document.write ("Ocjena je: dobar (3) - bodova: " + bodovi);
+    document.write ("<br />");
+  } else if (bodovi > 50){
+    document.write ("Ocjena je: dovoljan (2) - bodova: " + bodovi);
+    document.write ("<br />");
+  } else {
+    document.write ("Ponovno pisati ispit - bodova: " + bodovi);
+    document.write ("<br />");
+  }
+  document.write ("<br /> Ovo sigurno ide ispod bloka složenog if-else if - else izraza")
+
+</script>
+<script>
+  let counter = Math.floor(Math.random()*1001);
+  let msg;
+  let djeljitelj = 25
+  counter % djeljitelj == 0 ? msg = "djeljiv je s: " +djeljitelj :  msg = "nije djeljiv s: " +djeljitelj;
+  document.write("<br /> Djeljivost broja: " +counter + " --> " + msg);
+
+</script>
+</body>
+</html>

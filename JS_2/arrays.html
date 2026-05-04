@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nizovi</title>
+</head>
+<body>
+
+</body>
+<script>
+  let arr1 = [23, 34.57, "Neki broj", 22, 0, -120, 90];
+  let arr2 = new Array("prvi", "drugi", "novi", 1000);
+  arr1.forEach(function (element, idx, arr1){
+    document.write("<br /> Element niza: " + element + " -indeks: " + idx);
+    document.write("<br /> Type: " + typeof(arr1))
+  });
+  arr2.forEach(function (el, idx, arr2){
+    document.write("<br /> Indeks position " + idx + " - " + el.toUpperCase());
+  })
+</script>
+</html>
