@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Web Form</title>
+  <link id="idcss" rel="stylesheet" type="text/css" href="stylesWebForm.css">
+  <script type="text/javascript" src="WebFormSourceCode.js"></script>
+</head>
+<body>
+<h1>Jednostavna web forma</h1>
+<hr>
+<p style="font-size: 14pt">Unesite tražene vrijednosti u web formu!</p>
+<table>
+<tr>
+  <th></th>
+  <th><input id="user_name_id" type="text"></th>
+</tr>
+  <tr>
+    <th></th>
+    <th><input id="email_id" type="text"></th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>
+      <label for="comboId"> Choose a movie type!</label>
+      <select id="comboId" name="MovieType" style="width:125px; height:25px">
+        <option value="none"selected disabled>Select an option:</option>
+        <option>Comedy</option>
+        <option>Drama</option>
+        <option>Science Fiction</option>
+        <option>Thriller</option>
+        <option>Action</option>
+        <option>Horror</option>
+        <option>Fantasy</option>
+        <option>Romance</option>
+        <option>Musical</option>
+        <option>Crime</option>
+        <option>Western</option>
+      </select>
+    </th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>
+      <button onclick="processFormData()">Submit data</button>
+    </th>
+  </tr>
+</table>
+&nbsp;
+<div id="infoForm">
+  <p>
+    Ako niste ništa unijeli imat ćete samo poruku o grešci! U suprotnom imate unesene podatke!
+  </p>
+</div>
+&nbsp;
+<p id="formDataID">
+
+</p>
+</body>
+</html>
